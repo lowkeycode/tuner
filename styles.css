@@ -1,0 +1,125 @@
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tuner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tuner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    border-radius: 4px;
+    height: 40vh;
+    width: 600px;
+    background-color: rgb(250, 249, 248);
+    ;
+    box-shadow: 2px 1px 15px 1px rgba(128, 128, 128, 0.8);
+}
+
+.left {
+    height: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left__in-tune {
+    list-style: none;
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+}
+
+.left__in-tune-holes {
+    list-style: none;
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.left__in-tune--hole {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+.display {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    height: 10rem;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+    border-radius: 2px;
+}
+
+.right {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right__on-off {
+    list-style: none;
+}
+
+.right__hole-container {
+    display: flex;
+    margin-right: .5rem;
+}
+
+.right__holes {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 10rem;
+    flex-direction: column;
+}
+
+.right__holes-hole {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+.fa-power-off {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 0, 0, 0.7);
+    box-shadow: 1px 4px 1px rgba(255, 0, 0, 0.75);
+    padding: .5rem 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .2s;
+}
+
+.fa-power-off:hover {
+    cursor: pointer;
+}
+
+
+
+

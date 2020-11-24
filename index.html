@@ -4,74 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="./styles.css">
-    <script defer src="./index.js"></script>
+    <script defer src="./src/index.js"></script>
 </head>
 <body>
 
     <!-- Container -->
-    <div class="tuner-container">
-        
-        <!-- Left Side -->
-        <div class="left">
-            <ul class="left__in-tune">
-                <li class="left__in-tune--flat">b</li>
-                <li class="left__in-tune--tuned">!</li>
-                <li class="left__in-tune--sharp">#</li>
-            </ul>
-            <!-- Main Tuner Screen -->
-            <main>
-                <div class="display">
-                    Display
-                </div>
-            </main>
-        </div>
+    <div class="tuner">
+        <div class="tuner-container">
+            <!-- Left Side -->
+            <div class="left">
+                <!-- Tuning Symbols -->
+                <ul class="left__in-tune">
+                    <li class="left__in-tune--flat">♭</li>
+                    <li class="left__in-tune--tuned">▼</li>
+                    <li class="left__in-tune--sharp">♯</li>
+                </ul>
+                <!-- Tuning Lights -->
+                <ul class="left__in-tune-holes">
+                    <li class="left__in-tune--hole">&nbsp;</li>
+                    <li class="left__in-tune--hole">&nbsp;</li>
+                    <li class="left__in-tune--hole">&nbsp;</li>
+                </ul>
 
-        <!-- Right Side -->
-        <div class="right__buttons">
-            <ul>
-                <li>On</li>
-                <li>Off</li>
-            </ul>
-            <ul class="right__holes">
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-                <li>*</li>
-            </ul>
+
+
+                <!-- Main Tuner Screen -->
+                <main>
+                    <div class="display">
+                        <div class="display__on">
+                            
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+
+
+            <!-- Right Side -->
+            <div class="right">
+                <!-- Power Buttom -->
+                <ul class="right__on-off">
+                    <li><i class="fas fa-power-off"></i></li>
+                </ul>
+                <!-- Holes -->
+                <div class="right__hole-container">
+                    <ul class="right__holes">
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                </ul>
+                <ul class="right__holes">
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                </ul>
+                <ul class="right__holes">
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                    <li class="right__holes-hole">&nbsp;</li>
+                </ul>
+                </div>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
